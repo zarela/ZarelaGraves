@@ -1,0 +1,24 @@
+{
+  "name": "zarela-graves-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zarela/ZarelaGraves.git"
+  },
+  "author": "Zarela Graves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zarela/ZarelaGraves/issues"
+  },
+  "homepage": "https://github.com/zarela/ZarelaGraves#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  }
+}
