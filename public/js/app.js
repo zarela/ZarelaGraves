@@ -1,18 +1,20 @@
 (function(){
-  angular.module('my-site')
+  angular.module('MySite', ['ui.router'])
   .config(MainRouter);
 
   MainRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   function MainRouter($stateProvider, $urlRouterProvider){
 
-  $urlRouterProvider.otherwise("/");
-
   $stateProvider
-  .state('home', {
-    url: '/',
-    templateUrl: "home.html",
-  })
+  // .state('home', {
+  //   url: '/',
+  //   templateUrl: "home.html",
+  // })
+  // .state('about', {
+  //   url: '/about',
+  //   templateUrl: "about.html"
+  // })
 
   $urlRouterProvider.otherwise('/')
   // $locationProvider.html5Mode({
