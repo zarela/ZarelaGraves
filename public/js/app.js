@@ -28,9 +28,9 @@
   $urlRouterProvider.otherwise('/')
 
   $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
+    enabled: true,
+    requireBase: false
+  }); //locationProvider
 
   }; //end of routes
 })();

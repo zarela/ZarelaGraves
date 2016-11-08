@@ -9,11 +9,10 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-
-// app.use(function(req, res) {
-//     res.sendFile(__dirname + '/public/index.html');
-// });
-
+//This allows $locationProvider to work without #
+app.all('/*', function(req, res, next) {
+  res.sendFile('/public/index.html', { root: __dirname });
+});
 
 //PORT LISTENER
 //=========================================
