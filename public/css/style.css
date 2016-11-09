@@ -102,7 +102,6 @@ html, body {
   width: 100%;
 }
 
-/* vertical-centered image */
 .center-image {
   display: table-cell;
   text-align: center;
@@ -130,21 +129,13 @@ html, body {
   margin-left: 60px;
 }
 
-/*#discography {
-  color: #ffffff;
-}*/
 #discography .featurette-divider {
   color: #fff;
 }
-/*#gigs .panel {
-  opacity: 0.8;
-}*/
+
 .pad-md {
   padding: 50px 0;
 }
-/*#gigs h2 {
-  color: #fff;
-}*/
 
 body {
   display: flex;
