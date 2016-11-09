@@ -26,12 +26,21 @@ p{
  font-family: 'Quicksand', sans-serif;
  /*font-family: 'Cutive Mono', monospace;*/
  color:white;
- font-size: 16px;
+ font-size: 20px;
 }
 
 .btn{
   border-radius: 50px;
   margin: 1em;
+}
+
+.email{
+  color: #4DB6AC;
+}
+
+.email-text{
+  margin: auto;
+  padding:1em;
 }
 
 .brand-logo{
@@ -70,6 +79,12 @@ p{
   font: 2em;
 }
 
+.work{
+  border-radius: 15px;
+  border: white 11px;
+  box-shadow: 0 10px #grey;
+}
+
 .contact{
 padding-top: 10em;
 }
@@ -106,26 +121,30 @@ html, body {
 }
 
 #discography-layover {
-  background: url('https://dl.dropboxusercontent.com/u/50943129/codepen/Arctic-Monkeys-2009-Humbug-Shot-Wallpaper-679x452.jpg') no-repeat center center fixed;
+  background: url('http://i.imgur.com/dNKiGzq.png') no-repeat center center fixed;
   @include parallax;
-  height: 400px;
+  height: 600px;
+  border-radius: 15px;
+  border: white 11px;
+  box-shadow: 0 10px #grey;
+  margin-left: 60px;
 }
 
-#discography {
+/*#discography {
   color: #ffffff;
-}
+}*/
 #discography .featurette-divider {
   color: #fff;
 }
-#gigs .panel {
+/*#gigs .panel {
   opacity: 0.8;
-}
+}*/
 .pad-md {
   padding: 50px 0;
 }
-#gigs h2 {
+/*#gigs h2 {
   color: #fff;
-}
+}*/
 
 body {
   display: flex;
