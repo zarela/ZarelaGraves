@@ -1,3 +1,56 @@
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+h2 {
+	font: bold 2em monospace;
+  color: white;
+	border-right: .1em solid black;
+	width: calc(0.55em * 14);
+	width: 30ch;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 4s steps(30, end),
+	           blink-caret .3s step-end infinite alternate;
+}
+
+.my-skills{
+  font-size: 30px;
+  font: 2em monospace;
+  font: arial;
+  color: white;
+  text-align: left;
+  margin-left: 2em;
+}
+
+.welcome{
+  margin: 12vh;
+  color:white;
+  font-size: 30px;
+  	font: bold 2em monospace;
+}
+
+
+  .zarela-pic{
+    /*border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    border-bottom-right-radius: 50% 50%;
+    border-bottom-left-radius: 50% 50%;*/
+    border-radius: 50% 50%;
+    margin: 8vh;
+    /*position: fixed;*/
+    z-index: -1;
+    /*top: 50%;
+    left: 50%;*/
+    /*margin-top: -100px;
+    margin-left: -100px;*/
+    /*transform: translate(-50%, -50%);*/
+  }
+
+h5{
+  align-items: center;
+  color:white;
+}
+
 .brand-logo{
   margin-left: 20px;
 }
@@ -26,8 +79,6 @@ html, body {
 }
 
 #home {
-  /*background: url('https://dl.dropboxusercontent.com/u/50943129/codepen/10_Extra%20Photo%202.jpg') no-repeat center center fixed;
-  background-position: 0px 50px;*/
   @include parallax;
   background: url('https://s-media-cache-ak0.pinimg.com/originals/f2/9f/c0/f29fc0daafd3d930c97771ad5683ef8b.jpg')
 }
@@ -44,13 +95,10 @@ html, body {
   height: 400px;
 }
 
-
-/* Custom styles */
-h1, h2, h3, .navbar {
+h1, h3, .navbar {
   font-family: 'Montserrat', sans-serif;
 }
 #discography {
-  /*background-color: #333;*/
   color: #ffffff;
 }
 #discography .featurette-divider {
@@ -75,17 +123,19 @@ body {
 main {
   flex: 1 0 auto;
 }
+
 footer{
 	background-color: #222;
   color: white;
 	text-align: center;
   padding: 1em;
   font-size: 16px;
-  /*This makes footer to always stay at the end*/
-  /*position: absolute;*/
   position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
 }
+
+
+/*Tags for skills*/
