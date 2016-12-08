@@ -5,10 +5,15 @@
   position: fixed;
 }
 
+nav{
+ z-index: +2;
+}
+
 h2 {
 	font: bold 2em monospace;
   color: white;
-	border-right: .1em solid black;
+	/*border-right: .1em solid white;*/
+  border-right: .1em solid white;
 	width: calc(0.55em * 14);
 	width: 30ch;
 	white-space: nowrap;
