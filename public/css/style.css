@@ -1,5 +1,5 @@
 @-webkit-keyframes typing { from { width: 0; } }
-@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+@-webkit-keyframes blink-caret { 40% { border-color: transparent; } }
 
 .nav-bar{
   position: fixed;
@@ -12,14 +12,17 @@ nav{
 h2 {
 	font: bold 2em monospace;
   color: white;
-	/*border-right: .1em solid white;*/
   border-right: .1em solid white;
 	width: calc(0.55em * 14);
-	width: 30ch;
+	width: 20ch;
 	white-space: nowrap;
 	overflow: hidden;
-	-webkit-animation: typing 4s steps(30, end),
+	-webkit-animation: typing 3s steps(20, end),
 	blink-caret .3s step-end infinite alternate;
+}
+
+h3{
+  font-weight: bolder;
 }
 
 h4{
@@ -62,9 +65,10 @@ p{
 .welcome{
   margin: 12vh;
   color:white;
-  font-size: 30px;
+  font-size: 40px;
   font: bold 2em monospace;
   padding-top: 2em;
+  text-align: center;
 }
 
 .my-skills{
