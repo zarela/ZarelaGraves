@@ -1,9 +1,9 @@
 @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 40% { border-color: transparent; } }
-@viewport {
+/*@viewport {
   width: device-width;
   zoom: 1;
-}
+}*/
 
 .nav-bar{
   position: fixed;
