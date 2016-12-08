@@ -6,7 +6,7 @@
     <script src="scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
     <meta charset="utf-8">
     <title>Zarela Graves</title>
-    <script   src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
@@ -24,9 +24,10 @@
   <body id = "home">
       <nav class="#558b2f light-green darken-3 nav-bar">
       <!-- <nav class="#4DB6AC teal nav-bar"> -->
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Zarela Graves</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <!-- <div class="nav-wrapper"> -->
+        <div class="nav-fix">
+          <a href="#" class="brand-logo hide-on-small-only">Zarela Graves</a>
+          <ul id="nav-mobile" class="right">
             <li><a ui-sref='home' ui-sref-active='active'>HOME</a></li>
             <li><a ui-sref='about' ui-sref-active='active'>ABOUT ME</a></li>
             <li><a ui-sref='work' ui-sref-active='active'>MY WORK</a></li>

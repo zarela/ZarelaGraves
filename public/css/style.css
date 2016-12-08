@@ -167,4 +167,9 @@ footer{
   left: 0;
   margin-top:2em;
   padding: 1rem;
+  z-index: +1;
+}
+
+.empty{
+  height: 80px;
 }
