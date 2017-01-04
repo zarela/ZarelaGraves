@@ -68,16 +68,15 @@ p{
 }
 
 .welcome{
-  margin: 12vh;
+  /*margin: 12vh;*/
   color:white;
-  font-size: 40px;
   font: bold 2em monospace;
-  padding-top: 2em;
+  /*padding-top: 2em;*/
   text-align: center;
 }
 
 .my-skills{
-  font-size: 28px;
+  font-size: 26px;
   font: 2em monospace;
   color: white;
   text-align: left;
@@ -161,7 +160,7 @@ html, body {
 }
 
 .pad-md {
-  padding: 50px 0;
+  padding: 25px 0;
     /*padding: 1em;*/
 }
 
