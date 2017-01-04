@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='zareApp'>
+<html lang="en">
   <head>
     <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, ">
-    <script src="scripts/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta charset="utf-8">
     <title>Zarela Graves</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
@@ -13,18 +12,21 @@
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Gogle fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Raleway|Cutive+Mono|Quicksand" rel="stylesheet">
+    <!-- <script type="text/javascript" src="js/directive.js"></script> -->
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/pagesController.js"></script>
     <link rel='stylesheet' href='/css/style.css'>
     <link rel='stylesheet' href='main.js'>
   </head>
-  <body id = "home">
-      <nav class="#558b2f light-green darken-3 nav-bar">
-      <!-- <nav class="#4DB6AC teal nav-bar"> -->
-        <!-- <div class="nav-wrapper"> -->
+
+  <body id="home" ng-app="zareApp">
+
+      <!-- Original Nav Bar -->
+      <!-- <nav class="#558b2f light-green darken-3 nav-bar">
         <div class="nav-fix">
           <a href="#" class="brand-logo hide-on-small-only">Zarela Graves</a>
           <ul id="nav-mobile" class="right">
@@ -34,20 +36,57 @@
             <li><a ui-sref='contact' ui-sref-active='active'>CONNECT</a></li>
           </ul>
         </div>
+      </nav> -->
+
+      <nav class="#558b2f light-green darken-3 nav-bar" role="navigation">
+        <div class="nav-wrapper">
+          <a  id="logo-container" ui-sref='home' class="brand-logo">Zarela Graves</a>
+          <!-- <a  ui-sref='home' data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a> -->
+          <a  ui-sref='home' data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a ui-sref='home'>HOME</a></li>
+              <li><a ui-sref='about'>ABOUT ME</a></li>
+              <li><a ui-sref='work'>MY WORK</a></li>
+              <li><a ui-sref='contact'>CONNECT</a></li>
+            </ul>
+            <ul class="side-nav #558b2f light-green darken-3" id="nav-mobile">
+              <li><a ui-sref='home'>HOME</a></li>
+              <li><a ui-sref='about'>ABOUT ME</a></li>
+              <li><a ui-sref='work'>MY WORK</a></li>
+              <li><a ui-sref='contact'>CONNECT</a></li>
+            </ul>
+        </div>
       </nav>
 
+
     <div ng-controller="PagesController as page">
-      <!-- <h1>{{1+1}}</h1> -->
         <main ui-view></main>
     </div>
     <footer class="page-footer #558b2f light-green darken-3">
-    <!-- <footer class="page-footer teal #4DB6AC"> -->
       <div class="footer-copyright">
         <div class="container default-text">
-          © 2016 ZG Stardust All Rights Reserved
-          <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+          © ZG Stardust 2017 &#10084; All Rights Reserved
         </div>
       </div>
     </footer>
+    <script>
+      $(document).ready(function(){
+        $(".button-collapse").sideNav(
+          {
+            menuWidth: 150, // Default is 240
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+          }
+        );
+        // Show sideNav
+        $('.button-collapse').sideNav('show');
+        // Hide sideNav
+        $('.button-collapse').sideNav('hide');
+        // Destroy sideNav
+        // $('.button-collapse').sideNav('destroy');
+      })
+    </script>
+
   </body>
 </html>

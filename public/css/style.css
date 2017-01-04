@@ -91,7 +91,7 @@ span{
 
 .zarela-pic{
   border-radius: 50% 50%;
-  margin: 6vh;
+  /*margin: 6vh;*/
   z-index: -1;
 }
 
