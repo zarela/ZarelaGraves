@@ -5,8 +5,9 @@
   zoom: 1;
 }*/
 
-.nav-bar{
+.nav-bar, footer{
   position: fixed;
+  font-family: 'Quicksand', sans-serif;
 }
 
 nav{
@@ -180,8 +181,6 @@ footer{
 	text-align: center;
   padding: 1em;
   font-size: 16px;
-  position: fixed;
-  /*position: absolute;*/
   right: 0;
   bottom: 0;
   left: 0;
