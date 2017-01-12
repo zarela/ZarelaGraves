@@ -3,7 +3,8 @@
 
 .nav-bar, footer, .tabs{
   position: fixed;
-  font-family: 'Quicksand', sans-serif;
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'Nunito', sans-serif;
 }
 
 nav{
