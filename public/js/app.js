@@ -24,6 +24,22 @@
     url: '/contact',
     templateUrl: "contact.html"
   })
+  .state('job-trail', {
+    url: '/projects/job-trail',
+    templateUrl: "projects/job-trail.html"
+  })
+  .state('black-jack', {
+    url: '/projects/black-jack',
+    templateUrl: "projects/black-jack.html"
+  })
+  .state('shopmate', {
+    url: '/projects/shopmate',
+    templateUrl: "projects/shopmate.html"
+  })
+  .state('goal-digger', {
+    url: '/projects/goal-digger',
+    templateUrl: "projects/goal-digger.html"
+  })
 
   $urlRouterProvider.otherwise('/')
 

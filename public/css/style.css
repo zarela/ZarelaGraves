@@ -5,13 +5,24 @@
   position: fixed;
   /*font-family: 'Quicksand', sans-serif;*/
   font-family: 'Nunito', sans-serif;
+  z-index: +2;
+  border-spacing: 2em;
+}
+
+.tab{
+  background-color: #558b2f;
+  border-radius: 15px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 nav{
  z-index: +2;
 }
 
-h2 {
+
+h2{
 	font: bold 2em monospace;
   color: white;
   border-right: .1em solid white;
