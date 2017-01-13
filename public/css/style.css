@@ -140,7 +140,7 @@ html, body {
 #discography-layover {
   background: url('http://i.imgur.com/dNKiGzq.png') no-repeat center center fixed;
   @include parallax;
-  height: 500px;
+  height: 150px;
   border-radius: 15px;
   border: white 11px;
   box-shadow: 0 10px #grey;
