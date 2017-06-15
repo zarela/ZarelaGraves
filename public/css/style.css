@@ -1,7 +1,7 @@
 @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 40% { border-color: transparent; } }
 
-.nav-bar, footer, .tabs{
+.nav-bar, .tabs{
   position: fixed;
   /*font-family: 'Quicksand', sans-serif;*/
   font-family: 'Nunito', sans-serif;
