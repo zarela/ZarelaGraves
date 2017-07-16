@@ -3,7 +3,6 @@
 
 .nav-bar, .tabs{
   position: fixed;
-  /*font-family: 'Quicksand', sans-serif;*/
   font-family: 'Nunito', sans-serif;
   z-index: +2;
   border-spacing: 2em;
@@ -75,7 +74,6 @@ p{
 }
 
 .welcome{
-  /*margin: 12vh;*/
   color:white;
   font: bold 2em monospace;
   text-align: center;
@@ -123,7 +121,6 @@ img{
 
 html, body {
   height: 100%;
-  width: 100%;
 }
 
 .center-image {
@@ -133,7 +130,6 @@ html, body {
 }
 
 #home {
-  @include parallax;
   background: url('https://s-media-cache-ak0.pinimg.com/originals/f2/9f/c0/f29fc0daafd3d930c97771ad5683ef8b.jpg')
 }
 
@@ -148,13 +144,14 @@ html, body {
 }
 
 body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+  display: table;
+  width: 100%;
+  height: 100%;
 }
 
 main {
   flex: 1 0 auto;
+  height: auto;
 }
 
 footer{
@@ -166,14 +163,17 @@ footer{
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top:2em;
   padding: 1rem;
-  z-index: +1;
   position: relative;
   bottom: 0px;
   width: 100%;
+  height: 1px;
 }
 
 .empty{
   height: 100px;
+}
+
+header, footer {
+  display: table-row;
 }
