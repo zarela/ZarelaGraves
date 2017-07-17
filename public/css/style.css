@@ -75,7 +75,7 @@ p{
 }
 
 .welcome{
-  margin: 12vh;
+  margin: 7vh;
   color:white;
   font: bold 2em monospace;
   text-align: center;
@@ -176,7 +176,7 @@ footer{
 }
 
 .empty{
-  height: 100px;
+  height: 110px;
 }
 
 header, footer {
