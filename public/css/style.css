@@ -1,15 +1,23 @@
-@-webkit-keyframes typing { from { width: 0; } }
-@-webkit-keyframes blink-caret { 40% { border-color: transparent; } }
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@-webkit-keyframes blink-caret {
+  40% {
+    border-color: transparent;
+  }
+}
 
-
-.nav-bar, .tabs{
+.nav-bar,
+.tabs {
   position: fixed;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   z-index: +2;
   border-spacing: 2em;
 }
 
-.tab{
+.tab {
   background-color: #558b2f;
   border-radius: 15px;
   display: flex;
@@ -17,56 +25,55 @@
   flex-direction: column;
 }
 
-nav{
- z-index: +2;
+nav {
+  z-index: +2;
 }
 
-
-h2{
-	font: bold 2em monospace;
+h2 {
+  font: bold 2em monospace;
   color: white;
-  border-right: .1em solid white;
-	width: calc(0.55em * 14);
-	width: 20ch;
-	white-space: nowrap;
-	overflow: hidden;
-	-webkit-animation: typing 3s steps(20, end),
-	blink-caret .3s step-end infinite alternate;
+  border-right: 0.1em solid white;
+  width: calc(0.55em * 14);
+  width: 20ch;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 3s steps(20, end),
+    blink-caret 0.3s step-end infinite alternate;
 }
 
-h3{
+h3 {
   font-weight: bolder;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
-h4{
-font: bold 2em monospace;
-color: #558b2f;
+h4 {
+  font: bold 2em monospace;
+  color: #558b2f;
 }
 
-p{
- font-family: 'Quicksand', sans-serif;
- color:white;
- font-size: 20px;
+p {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 20px;
 }
 
-.btn{
+.btn {
   border-radius: 50px;
   margin: 1em;
   box-shadow: 5px 5px 5px black;
   background-color: #558b2f;
 }
 
-.email{
+.email {
   color: #558b2f;
 }
 
-.email-text{
+.email-text {
   margin: auto;
-  padding:1em;
+  padding: 1em;
 }
 
-.brand-logo{
+.brand-logo {
   margin-left: 20px;
   margin-top: 10px;
   font-size: 60px;
@@ -74,53 +81,64 @@ p{
   color: white;
 }
 
-.welcome{
+.welcome {
   margin: 7vh;
-  color:white;
+  color: white;
   font: bold 2em monospace;
   text-align: center;
 }
 
-.my-skills{
+.my-skills {
   font: 1.5em monospace;
   color: white;
   text-align: left;
   margin: 2em;
 }
 
-span{
-  white-space:pre-wrap;
-  word-wrap:break-word;
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  padding: 3em;
 }
 
-.zarela-pic{
+a {
+  color: #558b2f;
+}
+
+span {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.zarela-pic {
   border-radius: 50% 50%;
   z-index: -1;
 }
 
-.brand-statement{
+.brand-statement {
   font: bold 2em monospace;
   color: white;
   font: 2em;
 }
 
-.work{
+.work {
   border-radius: 15px;
   box-shadow: 10px 10px 5px black;
 }
 
-img{
+img {
   box-sizing: border-box;
   float: none;
   max-width: 100%;
 }
 
-.contact{
+.contact {
   padding-top: 10em;
 }
 
-
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -133,11 +151,12 @@ html, body {
 
 #home {
   @include parallax;
-  background: url('https://s-media-cache-ak0.pinimg.com/originals/f2/9f/c0/f29fc0daafd3d930c97771ad5683ef8b.jpg')
+  background: url("https://s-media-cache-ak0.pinimg.com/originals/f2/9f/c0/f29fc0daafd3d930c97771ad5683ef8b.jpg");
 }
 
 #discography-layover {
-  background: url('http://i.imgur.com/dNKiGzq.png') no-repeat center center fixed;
+  background: url("http://i.imgur.com/dNKiGzq.png") no-repeat center center
+    fixed;
   @include parallax;
   height: 150px;
   border-radius: 15px;
@@ -159,10 +178,10 @@ main {
   height: auto;
 }
 
-footer{
-	background-color: #222;
+footer {
+  background-color: #222;
   color: white;
-	text-align: center;
+  text-align: center;
   padding: 1em;
   font-size: 16px;
   right: 0;
@@ -175,10 +194,11 @@ footer{
   height: 1px;
 }
 
-.empty{
+.empty {
   height: 110px;
 }
 
-header, footer {
+header,
+footer {
   display: table-row;
 }
