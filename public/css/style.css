@@ -112,6 +112,10 @@ p {
   color: #dfc07b;
 }
 
+.github {
+  border: none;
+}
+
 a {
   color: #558b2f;
 }
@@ -203,21 +207,24 @@ footer {
 }
 
 .empty {
-  height: 110px;
+  height: 10em;
 }
 
 header,
 footer {
   display: table-row;
 }
+.contrib-footer {
+  display: none;
+}
 
 /* Button Animations */
 a.animBtn:link,
 a.animBtn:visited {
   position: relative;
-  display: block;
+  display: inline-block;
   width: 180px;
-  margin: 30px auto 0;
+  margin: 30px;
   padding: 14px 15px;
   border: 4px solid #558b2f;
   background: transparent;
