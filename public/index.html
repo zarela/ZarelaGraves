@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta charset="utf-8">
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <title>Zarela Graves</title>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <!-- Materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Gogle fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway|Cutive+Mono|Quicksand|Nunito:600" rel="stylesheet">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Gogle fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway|Cutive+Mono|Quicksand|Nunito:600"
+      rel="stylesheet"
+    />
+    <!-- GitHub -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/pagesController.js"></script>
-    <link rel='stylesheet' href='/css/style.css'>
-    <link rel='stylesheet' href='main.js'>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="main.js" />
   </head>
 
   <body id="home" ng-app="zareApp">
+    <nav class="#558b2f light-green darken-3 nav-bar">
+      <div class="nav-fix">
+        <a href="#" class="brand-logo hide-on-small-only">Zarela Graves</a>
+        <ul id="nav-mobile" class="right">
+          <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
+          <li><a ui-sref="about" ui-sref-active="active">ABOUT ME</a></li>
+          <li><a ui-sref="work" ui-sref-active="active">MY WORK</a></li>
+          <li><a ui-sref="contact" ui-sref-active="active">CONNECT</a></li>
+        </ul>
+      </div>
+    </nav>
 
-      <nav class="#558b2f light-green darken-3 nav-bar">
-        <div class="nav-fix">
-          <a href="#" class="brand-logo hide-on-small-only">Zarela Graves</a>
-          <ul id="nav-mobile" class="right">
-            <li><a ui-sref='home' ui-sref-active='active'>HOME</a></li>
-            <li><a ui-sref='about' ui-sref-active='active'>ABOUT ME</a></li>
-            <li><a ui-sref='work' ui-sref-active='active'>MY WORK</a></li>
-            <li><a ui-sref='contact' ui-sref-active='active'>CONNECT</a></li>
-          </ul>
-        </div>
-      </nav>
-
-    <div ng-controller="PagesController as page">
-        <main ui-view></main>
-    </div>
+    <div ng-controller="PagesController as page"><main ui-view></main></div>
     <footer class="page-footer #558b2f light-green darken-3">
       <div class="footer-copyright">
         <div class="container default-text">
-          © ZG Stardust 2017 &#10084; All Rights Reserved
+          © ZG Stardust
+          <script type="text/JavaScript">
+            document.write(new Date().getFullYear());
+          </script>
+          &#10084; All Rights Reserved
         </div>
       </div>
     </footer>
-    <!-- <script>
-      $(document).ready(function(){
-        $(".button-collapse").sideNav(
-          {
-            menuWidth: 150, // Default is 240
-            edge: 'left', // Choose the horizontal origin
-            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            draggable: true // Choose whether you can drag to open on touch screens
-          }
-        );
-        // Show sideNav
-        $('.button-collapse').sideNav('show');
-        // Hide sideNav
-        $('.button-collapse').sideNav('hide');
-        // Destroy sideNav
-        // $('.button-collapse').sideNav('destroy');
-      })
-    </script> -->
+
+    <script>
+      $(document).ready(function() {
+        $(".button-collapse").sideNav({
+          menuWidth: 150,
+          edge: "left", // Choose the horizontal origin
+          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          draggable: true // Choose whether you can drag to open on touch screens
+        });
+        $(".button-collapse").sideNav("show");
+        $(".button-collapse").sideNav("hide");
+      });
+    </script>
   </body>
 </html>
