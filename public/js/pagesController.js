@@ -1,13 +1,7 @@
-(function(){
-  angular
-  .module('zareApp')
-  .controller('PagesController', PagesController);
+(function() {
+  angular.module("zareApp").controller("PagesController", PagesController);
 
-  // PagesController.$inject = ['$http'];
-
-  function PagesController(){
+  function PagesController() {
     var self = this;
-    // self.all = [];
-
   }
 })();
