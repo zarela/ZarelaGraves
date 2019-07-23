@@ -9,20 +9,34 @@
   }
 }
 
+.tab {
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid #558b2f;
+  border-bottom: 4px solid #558b2f;
+}
+.tab * {
+  color: #558b2f !important;
+}
+
+.tab *:hover {
+  color: white !important;
+}
+
 .nav-bar,
 .tabs {
   position: fixed;
   font-family: "Nunito", sans-serif;
   z-index: +2;
   border-spacing: 2em;
+  color: papaya;
 }
 
-.tab {
-  background-color: #558b2f;
-  border-radius: 15px;
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+.jobs-selection {
+  position: absolute;
+  z-index: auto;
+  background-color: transparent;
+  padding: 0 10px 0;
 }
 
 nav {
@@ -195,7 +209,7 @@ footer {
 }
 
 .empty {
-  height: 10em;
+  height: 8em;
 }
 
 header,
