@@ -9,6 +9,12 @@
   }
 }
 
+@media only screen and (max-width: 600px) {
+  svg {
+    width: 90%;
+  }
+}
+
 .tab {
   display: flex;
   flex-direction: column;
@@ -114,8 +120,10 @@ p {
   color: #dfc07b;
 }
 
-.github {
-  border: none;
+.github-container {
+  border: 4px solid #558b2f;
+  margin-top: 7em;
+  align-content: center;
 }
 
 a {
@@ -167,7 +175,7 @@ body {
 
 #home {
   @include parallax;
-  background: url("https://s-media-cache-ak0.pinimg.com/originals/f2/9f/c0/f29fc0daafd3d930c97771ad5683ef8b.jpg");
+  background: url("../images/wood-background.jpg");
 }
 
 #discography-layover {
