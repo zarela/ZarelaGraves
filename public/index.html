@@ -51,15 +51,36 @@
 
   <body id="home" ng-app="zareApp">
     <nav class="#558b2f light-green darken-3 nav-bar">
-      <div class="nav-fix">
-        <a href="#" class="brand-logo hide-on-small-only">Zarela Graves</a>
-        <ul id="nav-mobile" class="right">
-          <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
-          <li><a ui-sref="about" ui-sref-active="active">ABOUT ME</a></li>
-          <li><a ui-sref="work" ui-sref-active="active">MY WORK</a></li>
-          <li><a ui-sref="contact" ui-sref-active="active">CONNECT</a></li>
-        </ul>
+      <div class="nav-logos">
+        <a href="#" class="brand-logo hide-on-small-only">Zarela Graves </a>
+        <!-- <a href="https://github.com/zarela" target="_blank">
+            <i class="fab fa-github"></i>
+          </a> -->
+        <!-- <a href="https://www.linkedin.com/in/zarela" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/ZG_Stardust" target="_blank">
+            <i class="fab fa-twitter" alt="@zg_stardust"></i>
+          </a>
+          <a href="https://www.instagram.com/zg_stardust" target="_blank">
+            <i class="fab fa-instagram" alt="@zg_stardust"></i>
+          </a> -->
       </div>
+      <ul id="nav-mobile" class="right">
+        <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
+        <li><a ui-sref="about" ui-sref-active="active">ABOUT ME</a></li>
+        <li><a ui-sref="work" ui-sref-active="active">PROJECTS</a></li>
+        <li><a ui-sref="contact" ui-sref-active="active">CONNECT</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1uWpeljuPZtTRKp4ZOfVL1plcxL_chv1-/view?usp=sharing"
+            target="_blank"
+            ui-sref="resume"
+            ui-sref-active="active"
+            >RESUME</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <div ng-controller="PagesController as page"><main ui-view></main></div>
