@@ -47,6 +47,18 @@
 
 nav {
   z-index: +2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logos {
+  padding-right: 1em !important;
+  padding-left: 19em;
+}
+
+.nav-logos * {
+  padding-top: 20px;
+  padding-right: 0.5em;
 }
 
 h2 {
