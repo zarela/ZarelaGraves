@@ -13,6 +13,14 @@
   svg {
     width: 90%;
   }
+  .email-text {
+    display: flex !important;
+    align-self: center !important;
+  }
+  nav * {
+    display: flex;
+    flex-grow: 1 !important;
+  }
 }
 
 .tab {
@@ -123,7 +131,6 @@ p {
 .social-media {
   display: flex;
   justify-content: space-between;
-  width: 50vh;
   padding: 3em;
 }
 

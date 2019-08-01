@@ -65,24 +65,22 @@
           </a>
         </div>
       </div>
-      <div>
-        <ul id="nav-mobile" class="center">
-          <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
-          <li><a ui-sref="about" ui-sref-active="active">ABOUT ME</a></li>
-          <li><a ui-sref="work" ui-sref-active="active">PROJECTS</a></li>
-          <li><a ui-sref="contact" ui-sref-active="active">CONNECT</a></li>
-          <li>
-            <a
-              href="https://drive.google.com/file/d/1uWpeljuPZtTRKp4ZOfVL1plcxL_chv1-/view?usp=sharing"
-              target="_blank"
-              ui-sref="resume"
-              ui-sref-active="active"
-              class="resume hide-on-small-only"
-              >RESUME</a
-            >
-          </li>
-        </ul>
-      </div>
+      <ul>
+        <li><a ui-sref="home" ui-sref-active="active">HOME</a></li>
+        <li><a ui-sref="about" ui-sref-active="active">ABOUT ME</a></li>
+        <li><a ui-sref="work" ui-sref-active="active">PROJECTS</a></li>
+        <li><a ui-sref="contact" ui-sref-active="active">CONNECT</a></li>
+        <li>
+          <a
+            href="https://drive.google.com/file/d/1uWpeljuPZtTRKp4ZOfVL1plcxL_chv1-/view?usp=sharing"
+            target="_blank"
+            ui-sref="resume"
+            ui-sref-active="active"
+            class="resume hide-on-small-only"
+            >RESUME</a
+          >
+        </li>
+      </ul>
     </nav>
     <div ng-controller="PagesController as page"><main ui-view></main></div>
     <footer class="page-footer #558b2f light-green darken-3">
