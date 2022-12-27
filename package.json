@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/zarela/ZarelaGraves#readme",
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.17.3",
     "path": "^0.12.7"
   },
   "engines": {
