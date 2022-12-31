@@ -25,9 +25,9 @@
         url: "/contact",
         templateUrl: "contact.html"
       })
-      .state("job-trail", {
-        url: "/projects/job-trail",
-        templateUrl: "projects/job-trail.html"
+      .state("btc-converter", {
+        url: "/projects/btc-converter",
+        templateUrl: "projects/btc-converter.html"
       })
       .state("black-jack", {
         url: "/projects/black-jack",
@@ -37,9 +37,9 @@
         url: "/projects/shopmate",
         templateUrl: "projects/shopmate.html"
       })
-      .state("goal-digger", {
-        url: "/projects/goal-digger",
-        templateUrl: "projects/goal-digger.html"
+      .state("vaccine-tracker", {
+        url: "/projects/vaccine-trackerr",
+        templateUrl: "projects/vaccine-tracker.html"
       });
 
     $urlRouterProvider.otherwise("/");

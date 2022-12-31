@@ -239,6 +239,10 @@ footer {
   height: 8em;
 }
 
+.half-empty {
+  height: 4em;
+}
+
 header,
 footer {
   display: table-row;
