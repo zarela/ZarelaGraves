@@ -2,8 +2,8 @@
 
 My personal website
 
-Heroku link: https://zgsturdust.herokuapp.com/
-Redirected from: www.zarelagraves.com
+Live Site: www.zarelagraves.com
+Redirected from: https://zarela-graves.vercel.app
 
 ## Git Workflow
 
